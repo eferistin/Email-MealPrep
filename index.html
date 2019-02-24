@@ -3,10 +3,133 @@
     <head>
         <title>MealStart | food prep delivery</title>
         <link rel="icon" type="image/ico" href="logo/MealPrep.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700,800,900" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css?family=Acme|Catamaran:200,300,400,500,600,700,800,900" rel="stylesheet">
         <style>
-        
+        @media only screen and (min-width:960px){
+            .containter{
+                width:960;
+            }
+            .menu-bar{
+                padding-right: 15px;
+            }
+        }
+        @media only screen and (max-width:960px){
+            .container{
+                width:600px;
+            }
+            .menu-bar{
+                padding-right: 10px;
+            }
+        }
+        @media only screen and (max-width:600px){
+            .container{
+                width:100%;
+            }
+            .business-logo img{
+                width:50%;
+                padding-left: 20px;      
+            }
+            .business-logo .mealPrep-img{
+                padding:15px 0 5px 0 !important;
+            }
+            .menu-category td{
+                width:20%;
+            }
+            .menu-category td a{
+                font-size:18px !important; 
+            }
+            .menu-bar td{
+                width:400px;
+            }
+            .food-pics tr .food1{
+                width:100%;
+                padding:5px 0 20px!important;
+                display: block;
+                text-align: center;
+            }
+            .food-pics tr .food2{
+                width:100%;
+                padding:20px 0 !important;
+                display: block;
+                text-align: center;
+            }
+            .food-pics tr .food3{
+                width:90%;
+                padding:20px 0 !important;
+                display: block;
+                text-align: center;
+            }
+            .social-media img{
+                width:50%;
+            }
+            .slogan h1{
+                font-size:1.6em !important;
+            }
+            .slogan h3{
+                font-size:1.25em !important;
+            }
+        @media only screen and (max-width:515px){
+                .business-logo img{
+                    width:60%;
+                    padding-left: 10px;
+                    
+                }
+                .business-logo .mealPrep-img{
+                    padding:15px 0 5px 0 !important;
+                }
+                .business-logo h5{
+                    font-size: 12px;
+                    padding-top: 0 !important;
+                }
+                .menu{
+                    width:80%;
+                }
+                .slogan h1{
+                    font-size:1.4em;
+                }
+
+                .slogan h3{
+                    font-size:1em;
+                }
+                .recipe-amount td h3{
+                    padding:0 20px !important;
+                }
+                .coupon td a h2{
+                    font-size: 20px;
+                }
+            }
+            @media only screen and (max-width:412px){
+                .menu-bar{
+                    padding-right: 5px;
+                }
+                .menu-category td a{
+                    font-size:16px !important; 
+                }
+                .slogan h1 {
+                    font-size: 1.4em !important;
+                }
+                .slogan h3{
+                    font-size:1em !important;
+                }
+                .headline1 td h3{
+                    font-size:20px !important;
+                    margin-top:0;
+                }
+                .headline2 td h3{
+                    font-size:20px !important;
+                }
+                .recipe-amount td h3{
+                    font-size: 18px !important;
+                    padding:0 20px !important;
+                }
+                .coupon td a h2{
+                    width:200px !important;
+                    font-size: 18px;
+                }
+            }
+        }
         </style>
     </head>
     <body>
@@ -19,7 +142,7 @@
                                 <!--Business icon-->
                                 <table class="business-logo" border="0" cellpading="0" cellspacing="0" width="15%" align="left">
                                     <tr  style="padding-bottom:0;">
-                                        <td style="padding-left:30px; padding-top:15px;">
+                                        <td class="mealPrep-img" style="padding-left:30px; padding-top:15px;">
                                             <a href="#"><img src="logo/MealPrep.png" alt="red basket logo of MealStart" width="50%"></a>
                                         </td>
                                     </tr>
@@ -39,7 +162,7 @@
                                             <table class="menu-category" border="0" cellpading="0" cellspacing="0" width=100%>
                                                 <tr>
                                                     <td  style="padding-top:10px;" align="center" width="23%">
-                                                            <a href="#" style="text-decoration: none;font-family: 'Catamaran', sans-serif,'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 700; text-transform: uppercase; color:#26d632; font-size:18px;">Plans</a>
+                                                            <a href="#" class="cat-name" style="text-decoration: none;font-family: 'Catamaran', sans-serif,'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 700; text-transform: uppercase; color:#26d632; font-size:18px;">Plans</a>
                                                         </td>
                                                         <td  style="padding-top:10px;" align="center">
                                                             <a href="#" style="text-decoration: none; font-family: 'Catamaran', sans-serif,'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 700; text-transform: uppercase; color:#26d632; font-size:18px;">Menu</a>
@@ -56,7 +179,7 @@
                                                 </tr>
                                             </table> <!--menu end-->
                                             <!--building the line bar under the menu-->
-                                            <table class="menu-bar" border="0" cellspacing="0" cellpading="0">
+                                            <table class="menu-bar" border="0" cellspacing="0" cellpading="0" width="100%">
                                                <tr>
                                                    <td width="500px" height="3px" style="background: #26d632; /* Old browsers */
                                                    background: -moz-linear-gradient(left, #26d632 0%, #10a21a 100%); /* FF3.6-15 */
@@ -72,11 +195,11 @@
                             </td>
                         </tr> <!--end of company Menu-->
                         <tr>
-                            <td class="slogan" align="center">
+                            <td class="slogan" align="center" width="100%">
                                 <h1 style="font-family: 'Catamaran', sans-serif,'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
                                     Eliminate the dinner prep hassel
                                 </h1>
-                                <img src="images/pexels-photo-273850.jpg" alt="stressful dinner prep with cookbook" width="45%">
+                                <img src="images/pexels-photo-273850.jpg" alt="stressful dinner prep with cookbook" width="60%">
                                 <h3 style="font-family: 'Catamaran', sans-serif,'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; padding:20px;">
                                     Top-rated, health conscience, mouth-watering cuisine just a click away.
                                 </h3>
@@ -86,13 +209,13 @@
                             <td>
                                 <table class="food-pics" border="0" cellspacing="0" cellpading="0" align="center">
                                     <tr align="center">
-                                        <td width="33.3%">
+                                        <td class="food1" width="33.3%">
                                             <img src="/images/Shrimp.jpg" width="70%" alt="picture of cook shrimp">
                                         </td>
-                                        <td width="33.3%">
+                                        <td class="food2" width="33.3%">
                                             <img src="/images/salmon.jpg" width="70%" alt="picture of salmon">
                                         </td>
-                                        <td width="33.3%">
+                                        <td class="food3" width="33.3%">
                                             <img src="/images/dinner-party.jpg" width="79%" alt="friends having dinner in kitchen">
                                         </td>
                                     </tr>
@@ -103,7 +226,7 @@
                             <td>
                                 <table class="headline1" border="0" cellpading="0" cellspacing="0" align="center">
                                     <tr>
-                                        <td width="100%">
+                                        <td width="100%" align="right">
                                             <h3 style="font-family: 'Catamaran', sans-serif,'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 700; color:#10A21A;font-size:24px; margin-bottom: 0; text-transform: uppercase;">
                                                 Contains
                                             </h3>
